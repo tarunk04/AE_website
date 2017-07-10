@@ -4,6 +4,7 @@
 <head>
     <title>Accidental Engineer</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/feedback.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <link rel="icon" href="res/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +12,8 @@
     <script type="text/javascript" src="res/jquery.js">
     </script>
     <script type="text/javascript" src="res/js.js"></script>
+    <script type="text/javascript" src="js/feedback.js">
+    </script>
     <script type="text/javascript">
         $(document).ready(function() {
 
@@ -53,10 +56,10 @@
                     <li class="tab" id="c">Contact Us</li>
                 </a>
                 <a href="#service">
-                    <li class="tab" id="s">Service</li>
+                    <li class="tab" id="s">Services</li>
                 </a>
                 <a href="#project">
-                    <li class="tab" id="p">Project</li>
+                    <li class="tab" id="p">Projects</li>
                 </a>
                 <a href="#home">
                     <li class="tab tabon" id="h">Home</li>
@@ -134,7 +137,7 @@
         </div>
         <div id="service">
             <div id='serhead'>
-                <h1>SERVICE</h1>
+                <h1>SERVICES</h1>
                 <hr>
             </div>
             <div class="sertab">
@@ -257,7 +260,7 @@
                       <div class="story-con">
                       <div class="d2"><span class="name">Vision</span><br>
                         <span class="contributor">OurVision</span><br>
-                            Accidental Engineer is a programming hub open for all. Anyone intrested in programmnig can join the hub. Our organization, Accidental Engineer, works on various real-world projects based on programming, development and designing skills. Anybody interested to contribute can contact us on Facebook and GitHub.<br>
+                            Accidental Engineer is a programming hub open for all. Anyone intrested in programmnig can join this hub. Our organization, Accidental Engineer, works on various real-world projects based on programming, development and designing skills. Anybody interested to contribute can contact us on Facebook and GitHub.<br>
                         <span class="contact"></span></div>
                       </div>
                     </div>
@@ -300,7 +303,7 @@
 
                             <h4 class="f"><a href="#home">Home</a></h4>
                             <h4 class="f"><a href="#project">Project</a></h4>
-                            <h4 class="f"><a href="#service">Service</a></h4>
+                            <h4 class="f"><a href="#service">Services</a></h4>
                             <h4 class="f"><a href="#contactus">Contact Us</a></h4>
                             <h4 class="f"><a href="#about">About Us</a></h4>
                         </div>
@@ -308,9 +311,23 @@
                     <td class="tr">
                         <div id="fe">
                             <h4 class="f"><a href="#contactus">Career</a></h4>
-                            <h4 class="f"><a href="feedback.php">Feedback</a></h4>
+                            <h4 class="f"><a id = "feedbackBtn" href = "#feedback">Feedback</a></h4>
+                            <a name = "feedback">
+                                                <div class = "feedbackBox" id = "feedbackBox1">
+                                                            <pre>Name:      <input type = "text"/></pre><br/>
+                                                            <pre>Email:     <input type = "text"/></pre><br/>
+                                                            <center><button id = "feedBtn1" type = "button">Next>>></button></center>
+                                                </div>
+                                                <div class = "feedbackBox" id = "feedbackBox2">
+                                                            <center>Feedback:  <br/><br/><textarea cols = "40" rows = "3">Please give your valuable feedback.</textarea><br/>
+                                                            <button id = "feedBtn2" type = "button">Finish</button></center>
+                                                </div>
+                                                <div class = "feedbackBox" id = "feedbackBox3">
+                                                            Thanks for giving your feedback!
+                                                </div>
+                            </a>
                             <h4 class="f"><a href="#project">Help</a></h4>
-                            <h4 class="f"><a href="#service">Custmer Support</a></h4>
+                            <h4 class="f"><a href="#service">Customer Support</a></h4>
                         </div>
                     </td>
 
