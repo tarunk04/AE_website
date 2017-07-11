@@ -1,7 +1,10 @@
 var desoffset;
 var scrollcheck = 0;
 $(document).ready(function() {
-    desoffset = $(".des").offset().top;
+    desoffset = $(".sertab1").offset().top;
+    //console.log("des :"+desoffset);
+    //console.log($(".sertab1").offset().top);
+    //desoffset=1717.237548828125;
 });
 $(window).scroll(function() {
     var scroll = $(this).scrollTop();
@@ -75,8 +78,8 @@ $(window).scroll(function() {
     var l1 = $(".sertab1").width() / 2 - 100;
     var i = 2;
 
-    if (scroll > $(".des").offset().top + 100 - ($(window).height()) / 2 || scroll < $("#contactus").offset().top - ($(window).height())) {
-
+    if (scroll > $(".sertab1").offset().top + 100 - ($(window).height()) / 2 || scroll < $("#contactus").offset().top - ($(window).height())) {
+      //console.log("test1");
         $(".des").css({
             'position': 'fixed',
             'top': ($(window).height() / 2 - 100) + 'px',
@@ -92,6 +95,7 @@ $(window).scroll(function() {
     }
     var height = $("#service").height() - ($(window).height() / 2 - 100) - $("#serhead").height() - 200;
     if (scroll > $("#contactus").offset().top - ($(window).height())) {
+        //console.log("test2");
 
         $(".des").css({
             'position': 'relative',
@@ -164,9 +168,11 @@ $(window).scroll(function() {
 
     }
 
-if (scroll < desoffset) {
+if (scroll < desoffset || scroll < $("#service").offset().top - ($(window).height())) {
 
-
+        //desoffset = $(".des").offset().top;
+        //console.log("hey:"+desoffset);
+          //console.log("test3");
         $(".des").css({
             'position': 'relative',
             'top': ($(window).height() / 2 - 100) + 'px',
@@ -174,10 +180,11 @@ if (scroll < desoffset) {
 
         });
     }
-
+//console.log("scroll :"+scroll);
+//console.log("ser:"+$("#service").offset().top);
 
 // service
-  console.log( $("#service").offset().top-($(window).height()));
+    //  console.log( $("#service").offset().top-($(window).height()));
 
      if( scroll > $("#service").offset().top-($(window).height())){
        var sertop=Math.min(0,scroll-$('#service').offset().top+$(window).height()-470);
@@ -187,7 +194,7 @@ if (scroll < desoffset) {
          'transform': 'translate('+sertop+'px,'+Math.abs(sertop*0.3)+'px)',
          'opacity': opacity
        });
-       console.log(sertop);
+      // console.log(sertop);
       }
       if( scroll > $("#service").offset().top-($(window).height())){
         var sertop=Math.min(0,scroll-$('#service').offset().top+$(window).height()-550);
