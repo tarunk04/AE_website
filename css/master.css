@@ -16,15 +16,24 @@ html, body {
 
 
 }
+
+
 #menu ul{
     list-style: none;
 }
+
+#menu a  {
+  text-decoration: none;
+  color: white;
+}
+
 .tab {
   float: right;
-  padding: 0px 36px;
+  width: 12%;
+  padding: 0px;
   text-align: center;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 0.8em;
   line-height: 42px;
   border-bottom: 4px solid transparent;
   border-top: 4px solid transparent;
@@ -32,7 +41,6 @@ html, body {
 .tab:hover {
   background: rgba(153, 153, 255, 0.8) ;
   color: black;
-
 }
 #container #menu{
   background-color: rgba(0,0,0,0.5);
@@ -40,19 +48,9 @@ html, body {
   height: 50px;
   width: 100%;
   z-index: 1;
-
-
-
-
 }
-#menu a  {
-  text-decoration: none;
-  padding: 10px;
-  margin: 10px;
-  line-height: 60px;
-  color: white;
 
-}
+
 #container #home{
   background-image: url("../res/2.jpg");
   background-repeat: no-repeat;

@@ -5,14 +5,16 @@
     <title>Accidental Engineer</title>
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <link rel="icon" href="res/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <script type="text/javascript" src="res/jquery.js">
     </script>
     <script type="text/javascript" src="res/js.js"></script>
     <script type="text/javascript" src="js/feedback.js">
+    </script>
+    <script type="text/javascript" src="js/menu.js">
     </script>
     <script type="text/javascript">
         $(document).ready(function() {
@@ -48,26 +50,27 @@
 <body datalist="scroll">
     <div id="container">
         <div id="menu">
+
             <ul>
+
                 <a href="#about">
-                    <li class="tab" id="a">About Us</li>
+                  <li class="tab" id="a"><i class="fa fa-book"></i><span class = "link-label">&nbsp;&nbsp;About Us</span></li>
                 </a>
                 <a href="#contactus">
-                    <li class="tab" id="c">Contact Us</li>
+                  <li class="tab" id="c"><i class="fa fa-address-book"></i><span class = "link-label">&nbsp;&nbsp;Contact Us</span></li>
                 </a>
                 <a href="#service">
-                    <li class="tab" id="s">Services</li>
+                  <li class="tab" id="s"><i class="fa fa-th-large"></i><span class = "link-label">&nbsp;&nbsp;Services</span></li>
                 </a>
                 <a href="#project">
-                    <li class="tab" id="p">Projects</li>
+                  <li class="tab" id="p">  <i class="fa fa-briefcase"></i><span class = "link-label">&nbsp;&nbsp;Projects</span></li>
                 </a>
                 <a href="#home">
-                    <li class="tab tabon" id="h">Home</li>
+                  <li class="tab tabon" id="h">  <i class="fa fa-home"></i><span class = "link-label">&nbsp;&nbsp;Home</span></li>
                 </a>
-                <div style="clear:both;"> </div>
             </ul>
         </div>
-        <div id="home">
+        <div id="home" style = "clear: both;">
             <h1> </h1>
 
             <div id="homeimg">
@@ -314,16 +317,19 @@
                             <h4 class="f"><a id = "feedbackBtn" href = "#feedback">Feedback</a></h4>
                             <a name = "feedback">
                                                 <div class = "feedbackBox" id = "feedbackBox1">
+                                                            <center><i class="fa fa-comments" aria-hidden="true"></i><br/><br/>
                                                             <pre>Name:      <input type = "text"/></pre><br/>
                                                             <pre>Email:     <input type = "text"/></pre><br/>
-                                                            <center><button id = "feedBtn1" type = "button">Next>>></button></center>
+                                                            <button id = "feedBtn1" type = "button">Next>>></button></center>
                                                 </div>
                                                 <div class = "feedbackBox" id = "feedbackBox2">
-                                                            <center>Feedback:  <br/><br/><textarea cols = "40" rows = "3">Please give your valuable feedback.</textarea><br/>
+                                                            <center><i class="fa fa-comments" aria-hidden="true"></i><br/><br/>
+                                                            Feedback:  <br/><br/><textarea cols = "40" rows = "3">Please give your valuable feedback.</textarea><br/>
                                                             <button id = "feedBtn2" type = "button">Finish</button></center>
                                                 </div>
                                                 <div class = "feedbackBox" id = "feedbackBox3">
-                                                            Thanks for giving your feedback!
+                                                            <center><i class="fa fa-check-square-o" aria-hidden="true"></i><br/><br/>
+                                                            Thanks for giving your feedback!</center>
                                                 </div>
                             </a>
                             <h4 class="f"><a href="#project">Help</a></h4>
